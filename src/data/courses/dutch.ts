@@ -1,0 +1,163 @@
+import { Course } from '../../types';
+
+export const dutchCourse: Course = {
+  id: 'course-nl',
+  language: 'nl',
+  languageName: 'Néerlandais',
+  flag: '🇳🇱',
+  bcp47: 'nl-NL',
+  units: [
+    {
+      id: 'nl-u1',
+      title: 'Unité 1 : Hallo & Premières Salutations',
+      description: 'Saluer, dire merci et faire connaissance à Amsterdam ou Bruxelles.',
+      color: 'emerald',
+      guidebook: {
+        grammarTips: [
+          {
+            rule: 'Les articles De et Het',
+            explanation: 'En néerlandais, la plupart des noms prennent "de" (environ 75%), les autres prennent "het" (neutre).',
+            example: 'De man (l\'homme) / Het kind (l\'enfant)',
+          },
+          {
+            rule: 'Dank je wel vs Dank u wel',
+            explanation: '"Dank je wel" est informel (Merci à toi), "Dank u wel" est la forme polie.',
+            example: 'Heel erg bedankt! (Merci beaucoup !)',
+          },
+        ],
+        keyVocabulary: [
+          { target: 'Hallo / Hoi', native: 'Bonjour / Salut', phonetic: 'ha-lo / hoy' },
+          { target: 'Goedemorgen', native: 'Bonjour (matin)', phonetic: 'khoo-de-mor-khen' },
+          { target: 'Dank je wel', native: 'Merci', phonetic: 'dank ye vel' },
+          { target: 'Alstublieft', native: 'S\'il vous plaît', phonetic: 'al-stu-bleeft' },
+          { target: 'Tot ziens', native: 'Au revoir', phonetic: 'tot zeens' },
+        ],
+      },
+      lessons: [
+        {
+          id: 'nl-u1-l1',
+          title: 'Dire bonjour & se présenter',
+          description: 'Salutations courantes et premiers échanges.',
+          xpReward: 20,
+          exercises: [
+            {
+              id: 'nl-u1-l1-e1',
+              type: 'multiple_choice',
+              prompt: 'Comment dit-on "Bonjour / Salut" amicalement en néerlandais ?',
+              targetText: 'Hallo',
+              nativeText: 'Bonjour / Salut !',
+              options: ['Hallo', 'Tot ziens', 'Dank je', 'Alstublieft'],
+              correctAnswer: 'Hallo',
+              audioPrompt: 'Hallo',
+              imageEmoji: '👋',
+              explanation: '"Hallo" et "Hoi" sont les salutations les plus naturelles aux Pays-Bas.',
+            },
+            {
+              id: 'nl-u1-l1-e2',
+              type: 'translation',
+              prompt: 'Traduis "Bonjour (le matin)" en néerlandais :',
+              targetText: 'Goedemorgen',
+              nativeText: 'Bonjour (au matin)',
+              options: ['Goedemorgen', 'Goedenavond', 'Tot', 'ziens', 'Hoi'],
+              correctAnswer: ['Goedemorgen'],
+              audioPrompt: 'Goedemorgen',
+              imageEmoji: '🌅',
+            },
+            {
+              id: 'nl-u1-l1-e3',
+              type: 'listen_repeat',
+              prompt: 'Écoute et répète "Merci beaucoup" :',
+              targetText: 'Dank je wel',
+              nativeText: 'Merci beaucoup',
+              correctAnswer: 'dank je wel',
+              audioPrompt: 'Dank je wel',
+              imageEmoji: '🙏',
+            },
+          ],
+        },
+        {
+          id: 'nl-u1-l2',
+          title: 'Demander des nouvelles',
+          description: 'Demander "Hoe gaat het?" et répondre.',
+          xpReward: 25,
+          exercises: [
+            {
+              id: 'nl-u1-l2-e1',
+              type: 'multiple_choice',
+              prompt: 'Que veut dire "Hoe gaat het?" ?',
+              targetText: 'Hoe gaat het?',
+              nativeText: 'Comment ça va ?',
+              options: ['Comment ça va ?', 'Comment tu t\'appelles ?', 'Où habites-tu ?', 'Quelle heure est-il ?'],
+              correctAnswer: 'Comment ça va ?',
+              audioPrompt: 'Hoe gaat het?',
+              imageEmoji: '😊',
+            },
+            {
+              id: 'nl-u1-l2-e2',
+              type: 'fill_blank',
+              prompt: 'Complète : "Très bien, merci" (Goed, bedankt)',
+              targetText: 'Goed, bedankt',
+              nativeText: 'Bien, merci',
+              options: ['Goed', 'Slecht', 'Waar', 'Wie'],
+              correctAnswer: 'Goed',
+              audioPrompt: 'Goed, bedankt',
+              imageEmoji: '👍',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'nl-u2',
+      title: 'Unité 2 : Café & Stroopwafel',
+      description: 'Commander un café et des spécialités néerlandaises.',
+      color: 'amber',
+      guidebook: {
+        grammarTips: [
+          {
+            rule: 'Graag (volontiers / s\'il vous plaît)',
+            explanation: 'En commandant, dire "Een koffie, graag" est très naturel et poli.',
+            example: 'Een thee, graag (Un thé, s\'il vous plaît).',
+          },
+        ],
+        keyVocabulary: [
+          { target: 'Koffie', native: 'Café', phonetic: 'kof-fee' },
+          { target: 'Thee', native: 'Thé', phonetic: 'tay' },
+          { target: 'Water', native: 'Eau', phonetic: 'wa-ter' },
+        ],
+      },
+      lessons: [
+        {
+          id: 'nl-u2-l1',
+          title: 'Au café néerlandais',
+          description: 'Commander café et boissons rafraîchissantes.',
+          xpReward: 25,
+          exercises: [
+            {
+              id: 'nl-u2-l1-e1',
+              type: 'multiple_choice',
+              prompt: 'Comment demander un café en néerlandais ?',
+              targetText: 'Een koffie, alsjeblieft',
+              nativeText: 'Un café, s\'il vous plaît',
+              options: ['Een koffie, alsjeblieft', 'Een boek, dank', 'Een auto, snel', 'Goedenacht'],
+              correctAnswer: 'Een koffie, alsjeblieft',
+              audioPrompt: 'Een koffie, alsjeblieft',
+              imageEmoji: '☕',
+            },
+            {
+              id: 'nl-u2-l1-e2',
+              type: 'translation',
+              prompt: 'Traduis "Un verre d\'eau, s\'il vous plaît" :',
+              targetText: 'Water graag',
+              nativeText: 'De l\'eau, s\'il vous plaît',
+              options: ['Water', 'graag', 'thee', 'brood', 'nee'],
+              correctAnswer: ['Water', 'graag'],
+              audioPrompt: 'Water, graag',
+              imageEmoji: '💧',
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};

@@ -1,0 +1,6 @@
+{
+  "name": "App d'Apprentissage des Langues Gamifiée",
+  "description": "Plateforme d'apprentissage linguistique gamifiée avec progression par unités, arbres thématiques, mascotte animée et studio IA pour parents et professeurs.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
